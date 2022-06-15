@@ -9,13 +9,16 @@ export default function Home() {
       </Head>
 
 
-<header className="header">Hello</header>
+<header className="header">Hello
+<img src="/images/logo.jpg" alt=""></img>
+<i className="fa-solid fa-phone"></i>
+</header>
 
 <main className="main"></main>
 
 <footer className="footer"></footer>
 
-     
+
     </div>
   )
 }
