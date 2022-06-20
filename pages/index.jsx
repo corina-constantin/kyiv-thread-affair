@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Header from '../components/header';
 
 
 export default function Home() {
@@ -8,16 +9,11 @@ export default function Home() {
         <title>Thread affair</title>
       </Head>
 
+<Header></Header>
 
-<header className="header mt-5 text-warning">Hello
-<img src="/images/logo.jpg" alt=""></img>
-<i className="fa-solid fa-phone"></i>
-</header>
 
 <main className="content"></main>
-<div className="badge">20%off</div>
-  <div className="badge badge-secondary">secondary</div>
-    <div className="badge badge-oversized">%</div>
+
 
 <footer className="footer"></footer>
 
