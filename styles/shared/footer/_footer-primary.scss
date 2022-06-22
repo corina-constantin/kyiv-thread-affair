@@ -1,0 +1,59 @@
+.footer-primary {
+  background-color: $brand-secondary;
+
+  //.footer-primary-inner >> asta va deveni cel de jos
+  &-inner {
+    display: grid;
+    row-gap: 43px;
+    grid-template-areas:
+      'nav'
+      'contact'
+      'support';
+
+    @include media-breakpoint-up('lg') {
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas:
+        'nav nav'
+        'support contact';
+    }
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 43px;
+    grid-area: nav;
+
+    @include media-breakpoint-up('lg') {
+      flex-wrap: nowrap;
+      column-gap: 110px;
+    }
+
+    ul {
+      flex-basis: 50%;
+
+      @include media-breakpoint-up('lg') {
+        flex-basis: auto;
+      }
+    }
+  }
+
+  .footer-contact {
+    grid-area: contact;
+
+    @include media-breakpoint-up('lg') {
+      align-self: end;
+      // tb sa scoatem marginea pusa automat de la bootstrap, ca nu e aliniat cu footer support in partea de jos
+    }
+  }
+
+  .footer-support {
+    grid-area: support;
+    justify-self: center;
+
+    @include media-breakpoint-up('lg') {
+      justify-self: start;
+      align-self: end;
+    }
+  }
+}
