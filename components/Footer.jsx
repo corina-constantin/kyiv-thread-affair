@@ -159,11 +159,11 @@ export default function Footer() {
               Largo Augusto 3, Milano, 20122, Milano, IT
               {/*display block pe ancore, no BR*/}
               <a href="tel:+0039 02 760 003 66" title="Call us">
-                Tel: 0039 02 760 003 66
+                 Tel: 0039 02 760 003 66
               </a>
               {/* use a:nth-of-type(1) */}
               <a href="mailto:office@thread-affair.com" title="Email us">
-                office@thread-affair.com
+                 office@thread-affair.com
               </a>
             </p>
           </section>

@@ -26,6 +26,7 @@
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     justify-self: start;
+    font-size: 24px;
 
     i[class*='fa-bars'] {
       color: $brand-primary;
@@ -51,6 +52,10 @@
       .cart-controls {
         position: relative;
         bottom: -6px;
+
+        i[class*='fa-'] {
+          font-size: 24px;
+        }
 
         .cart-qty {
           position: absolute;

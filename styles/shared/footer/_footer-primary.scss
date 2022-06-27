@@ -1,5 +1,10 @@
 .footer-primary {
   background-color: $brand-secondary;
+  color: $gray-primary;
+  font-size: 14px;
+  padding: 50px;
+  margin-bottom: 16px;
+  font-weight: 300;
 
   //.footer-primary-inner >> asta va deveni cel de jos
   &-inner {
@@ -24,6 +29,7 @@
     row-gap: 43px;
     grid-area: nav;
     text-transform: uppercase;
+    margin-bottom: 50px;
 
     @include media-breakpoint-up('lg') {
       flex-wrap: nowrap;
@@ -35,6 +41,11 @@
 
       @include media-breakpoint-up('lg') {
         flex-basis: auto;
+        margin-right: 32px;
+
+        li {
+          margin-bottom: 6px;
+        }
       }
     }
   }
@@ -42,8 +53,32 @@
   .footer-contact {
     grid-area: contact;
 
+    span {
+      color: $gray-tertiary;
+      font-weight: 500;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      padding-bottom: 8px;
+    }
+
+    p {
+      line-height: 18px;
+    }
+
+    a {
+      display: block;
+    }
+
+    a:nth-of-type(2) {
+      color: $brand-primary;
+    }
+
     @include media-breakpoint-up('lg') {
       align-self: end;
+      margin-left: 24px;
+
       // tb sa scoatem marginea pusa automat de la bootstrap, ca nu e aliniat cu footer support in partea de jos
     }
   }
@@ -53,6 +88,7 @@
     text-transform: uppercase;
     justify-self: center;
     align-self: center;
+    padding-bottom: 16px;
 
     li {
       display: inline-flex;

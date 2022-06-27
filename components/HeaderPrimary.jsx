@@ -35,7 +35,7 @@ export default function HeaderPrimary(){
   </li>
 
   <li>
-    <a href="https://x.ro" title="">Customize your suit</a>
+    <a href="https://x.ro" title="Customize your suit">Customize your suit</a>
   </li>
 </ul>
 </nav>
