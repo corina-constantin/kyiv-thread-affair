@@ -23,6 +23,7 @@
     flex-wrap: wrap;
     row-gap: 43px;
     grid-area: nav;
+    text-transform: uppercase;
 
     @include media-breakpoint-up('lg') {
       flex-wrap: nowrap;
@@ -49,7 +50,22 @@
 
   .footer-support {
     grid-area: support;
+    text-transform: uppercase;
     justify-self: center;
+    align-self: center;
+
+    li {
+      display: inline-flex;
+      margin-right: 16px;
+
+      i[class*='fa-'] {
+        color: $brand-primary;
+        font-size: 24px;
+        display: grid;
+        justify-items: center;
+        margin-bottom: 8px;
+      }
+    }
 
     @include media-breakpoint-up('lg') {
       justify-self: start;

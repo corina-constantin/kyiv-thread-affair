@@ -19,6 +19,8 @@ export default function HeaderPrimary(){
   </li>
 </ul>
 </nav>
+
+<nav className="nav-secondary">
 <ul>
   <li>
     <a href="https://x.ro" title="Glamour suits">Glamour suits</a>
@@ -36,8 +38,6 @@ export default function HeaderPrimary(){
     <a href="https://x.ro" title="">Customize your suit</a>
   </li>
 </ul>
-<nav className="nav-secondary">
-
 </nav>
   </section>
 }
