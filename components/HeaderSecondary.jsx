@@ -43,7 +43,7 @@ export default function HeaderSecondary() {
           <li className="cart-controls">
             <a href="https://pixellab.ro" title="Cart">
               <i className="fa-solid fa-cart-shopping"></i>
-              <span className="cart-qty  d-lg-block">3</span>
+              <span className="cart-qty">3</span>
             </a>
           </li>
 
