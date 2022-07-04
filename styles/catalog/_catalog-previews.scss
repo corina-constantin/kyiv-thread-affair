@@ -1,0 +1,41 @@
+// this is a layout study
+//
+.catalog-preview {
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    display: block;
+    line-height: 24px;
+  }
+
+  &.grid-layout {
+    .product-tiles {
+      display: grid;
+      row-gap: 24px;
+
+      @include media-breakpoint-up('lg') {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 8.855799;
+      }
+    }
+  }
+  &.flex-layout {
+    .product-tiles {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+
+      @include media-breakpoint-up('lg') {
+        flex-direction: row;
+        justify-content: space-between;
+
+        & > .product-tile {
+          flex-basis: 27.429467%;
+        }
+      }
+    }
+  }
+}

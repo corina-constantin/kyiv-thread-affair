@@ -43,7 +43,7 @@ export default function HeaderSecondary() {
           <li className="cart-controls">
             <a href="https://pixellab.ro" title="Cart">
               <i className="fa-solid fa-cart-shopping"></i>
-              <span className="cart-qty d-none d-lg-block">3</span>
+              <span className="cart-qty  d-lg-block">3</span>
             </a>
           </li>
 
@@ -51,7 +51,6 @@ export default function HeaderSecondary() {
             <a href="https://pixellab.ro" title="My Account"></a>
             <img src="/images/user-avatar.png" alt="My Account"/>
             <i className="fa-solid fa-angle-down"></i>
-            <i className="fa-solid fa-user d-lg-none"></i>
           </li>
         </ul>
       </div>

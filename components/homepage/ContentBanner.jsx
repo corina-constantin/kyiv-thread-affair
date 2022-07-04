@@ -2,25 +2,27 @@ export default function ContentBanner() {
   return (
     <div className="content-banner">
       <div className="content-banner-inner container">
-        <div className="text-center">
-          <h1>Custom Suits</h1>
-          <h2>Get back to work in style</h2>
-        </div>
+        <div className="content-banner-header text-center">
+          <div className="text-center">
+            <h1>Custom Suits</h1>
+            <h2>Get back to work in style</h2>
+          </div>
 
-        <div>
-          <a
-            href="https://x.ro"
-            title="Create your suit"
-            className="button button-large text-uppercase"
-          >
-            Create your suit
-          </a>
+          <div className="mt-4">
+            <a
+              href="https://x.ro"
+              title="Create your suit"
+              className="button button-large text-uppercase text-center"
+            >
+              Create your suit
+            </a>
+          </div>
         </div>
 
         <footer className="content-banner-copy">
           <p className="m-0">
-            A Tailored Suit that will fit you perfectly is a dream for
-            everybody.
+            <span>A Tailored Suit</span> that will fit you perfectly is a dream
+            for everybody.
           </p>
 
           <p className="m-0 d-none d-lg-block">
